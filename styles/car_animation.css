@@ -1,0 +1,132 @@
+@-webkit-keyframes moveRight {
+  100% {
+    transform: translateX(-2950px);
+  }
+}
+@keyframes moveRight {
+  100% {
+    transform: translateX(-2950px);
+  }
+}
+@-webkit-keyframes suspension {
+  100% {
+    transform: translateY(-1px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  0% {
+    transform: translateY(-1px);
+  }
+}
+@keyframes suspension {
+  100% {
+    transform: translateY(-1px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  0% {
+    transform: translateY(-1px);
+  }
+}
+body {
+  overflow-x: hidden;
+}
+
+.degradado {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/landscape/background.png");
+  background-repeat: repeat-x;
+  background-size: cover;
+  z-index: 200;
+  opacity: 0.5;
+}
+
+.night {
+  height: 100vh;
+  width: 100%;
+  background: url("../images/landscape/Landscape_city.png");
+  background-size: cover;
+}
+
+.surface {
+  height: 230px;
+  width: 700%;
+  background: url("../images/stage/layer_2.png");
+  background-repeat: repeat-x;
+  display: block;
+  position: absolute;
+  bottom: 15%;
+  left: 0%;
+  overflow-x: hidden;
+  filter: blur(0.5px);
+}
+
+.car {
+  position: absolute;
+  bottom: 24%;
+  left: 24%;
+}
+
+.puente {
+  width: 600%;
+  height: 230px;
+  background: url("../images/stage/layer_5.png");
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: 0;
+  -webkit-animation: moveRight 5s linear infinite;
+          animation: moveRight 5s linear infinite;
+  filter: blur(2px);
+  overflow-x: hidden;
+}
+
+.valla {
+  width: 600%;
+  height: 100vh;
+  background: url("../images/stage/Valla_metal.png");
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: 0;
+  -webkit-animation: moveRight 1.5s linear infinite;
+          animation: moveRight 1.5s linear infinite;
+  filter: blur(2px);
+  overflow-x: hidden;
+}
+
+.cercado {
+  width: 600%;
+  height: 230px;
+  background: url("../images/stage/layer_3.png");
+  position: absolute;
+  background-repeat: repeat-x;
+  bottom: 0;
+  -webkit-animation: moveRight 2s linear infinite;
+          animation: moveRight 2s linear infinite;
+  overflow-x: hidden;
+}
+
+.smoke {
+  width: 600%;
+  height: 1800px;
+  background: url("../images/stage/smoke.png");
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: 0;
+  -webkit-animation: moveRight 6s linear infinite;
+          animation: moveRight 6s linear infinite;
+  z-index: 100;
+  overflow-x: hidden;
+}
+
+.moveRight {
+  -webkit-animation: moveRight 6s linear infinite;
+          animation: moveRight 6s linear infinite;
+}
+
+.suspension {
+  -webkit-animation: suspension 1s linear infinite;
+          animation: suspension 1s linear infinite;
+}/*# sourceMappingURL=car_animation.css.map */
